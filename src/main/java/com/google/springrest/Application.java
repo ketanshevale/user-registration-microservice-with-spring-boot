@@ -8,6 +8,8 @@ import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 @SpringBootApplication
 public class Application {
 	public static void main(String[] args) {
+		//This will select application-prod.properties file
+		//System.setProperty(AbstractEnvironment.ACTIVE_PROFILES_PROPERTY_NAME, "prod");
 		SpringApplication.run(Application.class, args);
 	}
 }
